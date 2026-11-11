@@ -1,0 +1,29 @@
+[project]
+name = "nonebot-plugin-fishmenu"
+version = "0.1.0"
+description = "指令菜单：把各插件的命令拼成一张卡（文字或 PNG），支持按群覆盖与权限过滤（nonebot2，零 LLM 开销）"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "173ababah" }]
+keywords = ["nonebot2", "nonebot-plugin", "menu", "help", "pillow"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Framework :: Nonebot2",
+  "License :: OSI Approved :: MIT License",
+]
+dependencies = ["nonebot2>=2.0.0"]
+
+[project.optional-dependencies]
+img = ["pillow>=9.0"]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/173ababah/nonebot-plugin-fishmenu"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
